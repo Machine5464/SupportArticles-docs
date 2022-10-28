@@ -32,6 +32,8 @@ This issue occurs if the **Auto MDM Enrollment with AAD Token** Group Policy Obj
 
 This behavior is expected. You can safely ignore the warning message.
 
+If enrollment still fails and the device does not show in MDM, check the registry key Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Enrollments\ for any MDM entries blocking the enrollment.
+
 ## More information
 
 Below is an example of the `%windir%\debug\usermode\Gpsvc.log` file entry when you enable Group Policy Service debug logging by following the steps in [A Treatise on Group Policy Troubleshooting–now with GPSVC Log Analysis!](/archive/blogs/askds/a-treatise-on-group-policy-troubleshootingnow-with-gpsvc-log-analysis)
